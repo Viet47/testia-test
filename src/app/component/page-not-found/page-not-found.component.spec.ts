@@ -13,6 +13,6 @@ describe('PageNotFoundComponent', () => {
   });
  
   test('should create', () => {
-    expect(spectator.query('p').textContent).toEqual('page-not-found works!');
+    expect(spectator.query('p').textContent).toEqual('404 - PAGE NOT FOUD');
   });
 });

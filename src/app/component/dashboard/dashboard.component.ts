@@ -41,7 +41,7 @@ export class DashboardComponent implements AfterViewInit {
   }
 
   enableDraw(): void {
-    this.enableDrawLine= !this.enableDrawLine;
+    this.enableDrawLine = !this.enableDrawLine;
   }
 
   clickRight(e: MouseEvent) {
@@ -52,8 +52,8 @@ export class DashboardComponent implements AfterViewInit {
 
   draw(e: MouseEvent): void {
     if (this.enableDrawLine) {
-      let y = e.offsetY;
-      let x = e.offsetX;
+      const y = e.offsetY;
+      const x = e.offsetX;
       if (this.needFirstPoint) {
         this.mousePositionOne = [x, y]
         this.needFirstPoint = false;
@@ -77,13 +77,13 @@ export class DashboardComponent implements AfterViewInit {
 
   private drawImage(): void {
     if (this.file) {
-      let img = new Image;
+      const img = new Image;
       img.onload = () => {
         const hRatio = this.canvasNativeElement.width / img.width;
         const vRatio = this.canvasNativeElement.height / img.height;
         const ratio = Math.min(hRatio, vRatio);
-        var centerShift_x = (this.canvasNativeElement.width - img.width * ratio) / 2;
-        var centerShift_y = (this.canvasNativeElement.height - img.height * ratio) / 2;
+        const centerShift_x = (this.canvasNativeElement.width - img.width * ratio) / 2;
+        const centerShift_y = (this.canvasNativeElement.height - img.height * ratio) / 2;
         if (this.enableZoom) {
           this.context.drawImage(img, img.width / 4, img.height / 4, img.width / 2, img.height / 2, centerShift_x, centerShift_y, img.width * ratio, img.height * ratio);
         } else {
