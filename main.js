@@ -14,7 +14,6 @@ function createWindow() {
         }  
     })  
     win.loadFile('dist/testia-test/index.html')  
-    win.webContents.openDevTools()  
     win.on('closed', () => {  
         win = null  
     })  

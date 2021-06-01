@@ -1,14 +1,14 @@
 {
   "name": "testia-test",
   "version": "0.0.0",
-  "main":"main.js",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "jest",
-    "electron":"ng build && electron ."
+    "electron": "ng build && electron ."
   },
   "private": true,
   "dependencies": {
@@ -35,6 +35,7 @@
     "@types/jest": "^26.0.23",
     "@types/node": "^12.11.1",
     "electron": "^13.0.1",
+    "electron-packager": "^15.2.0",
     "jest": "^27.0.3",
     "jest-preset-angular": "^9.0.1",
     "ng-mocks": "^12.0.2",
