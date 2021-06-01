@@ -1,0 +1,18 @@
+<div>
+    <canvas #canvas (contextmenu)="clickRight($event)" (click)="draw($event)" class="canvas_size"></canvas>
+</div>
+
+<div>
+    <div>
+        <input #imgInput hidden="true" type="file" onclick="this.value=null" (change)="imgInputChange($event)"
+            accept="image/png, image/jpeg" />
+        <button mat-raised-button color="secondary" (click)="imgInput.click()">Importer</button>
+    </div>
+    <div>
+        <button mat-raised-button color="secondary" [ngClass]="enableDrawLine ? 'active_draw' :'' "
+            (click)="enableDraw()">Dessiner</button>
+    </div>
+    <div>
+        <button mat-raised-button color="secondary" (click)="zoomer()">{{ enableZoom ? 'Dézoomer': 'Zoomer'}}</button>
+    </div>
+</div>

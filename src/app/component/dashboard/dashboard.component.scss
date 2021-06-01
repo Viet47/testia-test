@@ -1,0 +1,17 @@
+:host {
+    display: flex;
+    margin: 20px;
+
+    button {
+        width: 100px;
+        margin: 10px;
+    }
+}
+.canvas_size {
+    width: 100%;
+    height: 100%;
+    border: 1px dotted red;
+}
+.active_draw {
+    background-color: red;
+}

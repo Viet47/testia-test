@@ -1,0 +1,10 @@
+
+@import "../../../variables";
+
+:host {
+    display: flex;
+}
+.header {
+    padding: 10px;;
+     background: linear-gradient(to right, white, $primary-color);
+}
