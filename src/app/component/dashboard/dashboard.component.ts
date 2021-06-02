@@ -47,6 +47,7 @@ export class DashboardComponent implements AfterViewInit {
   clickRight(e: MouseEvent) {
     this.cleanCanvas();
     this.drawImage();
+    this.needFirstPoint = true;
     return false;
   }
 
